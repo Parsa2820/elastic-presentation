@@ -1,0 +1,35 @@
+PUT /comparison
+
+GET comparison/_count
+
+GET comparison/_search
+{
+  "query": {
+    "match": {
+      "title": "ستارخان"
+    }
+  }
+}
+
+GET comparison/_search
+{
+  "query": {
+    "range": {
+      "room": {
+        "gte": 1
+      }
+    }
+  }
+}
+
+POST comparison/_search
+{
+  "aggs": {
+    "room_avg": {
+      "avg": {
+        "field": "room"
+      }
+    }
+  }
+}
+
