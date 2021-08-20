@@ -1,6 +1,6 @@
 # elastic-presentation
 
-**An Introduction to Elasticsearch**
+[**An Introduction to Elasticsearch**](./main/presentation.pdf)
 
 Technical Presentation Course - Spring 2021
 
